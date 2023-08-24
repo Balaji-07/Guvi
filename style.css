@@ -1,0 +1,119 @@
+body{
+    background-image:url(https://i.gifer.com/4Cb2.gif);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-color:black;
+}
+.errors{
+  text-align:center;
+}
+.display{
+  display:flex;
+  margin-left:20%;
+  text-align:center;
+}
+.display p{
+  display:inline-block;
+  text-align:center;
+  margin-left:10px;
+  margin-top:0.6%;
+}
+.container{
+    overflow: hidden;
+    max-width: 390px;
+    padding: 30px;
+    background: #fff;
+    border-radius: 5px;
+    margin-top:2%;
+  }
+  .container .slide-controls{
+    position: relative;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    overflow: hidden;
+    margin: 30px 0 10px 0;
+    justify-content: space-between;
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+  .slide-controls .slide{
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 48px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  .slide-controls label.signup{
+    color: #000;
+  }
+  .slide-controls .slider-tab{
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    left: 0;
+    z-index: 0;
+    border-radius: 5px;
+    background:black;
+  }
+  input[type="radio"]{
+    display: none;
+  }
+  #signup:checked ~ .slider-tab{
+    left: 50%;
+  }
+  #signup:checked ~ label.signup{
+    color: #fff;
+    cursor: default;
+    user-select: none;
+  }
+  #signup:checked ~ label.login{
+    color: #000;
+  }
+  #login:checked ~ label.signup{
+    color: #000;
+  }
+  #login:checked ~ label.login{
+    cursor: default;
+    user-select: none;
+  }
+  .container{
+    width: 100%;
+    overflow: hidden;
+  }
+  .container .form-inner{
+    display: flex;
+    width: 100%;
+    transition: all 0.2s linear;
+  }
+  .container .form-inner form{
+    width: 200%;
+  }
+  .form-inner form .mb-3{
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .register{
+    margin-left:125%;
+  }
+  .popup {
+    display: none;
+    position: fixed;
+    top: 15%;
+    left: 75%;
+    width: 25%;
+    z-index:1;
+  }
+  .popup-content {
+    background-color: rgb(255, 255, 255);
+    padding: 2%;
+    border-radius: 5px;
+    box-shadow: 0 4px 80px rgba(0, 0, 0, 0.808);
+    text-align: center;
+  }
