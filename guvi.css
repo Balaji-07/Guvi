@@ -67,6 +67,9 @@ nav ul li a:hover{
   border-radius:5px;
   box-shadow: 0px 0px 100px blue;
 }
+.welcome p{
+  padding-bottom:1%;
+}
 .percent {
   display: flex;
   justify-content: space-between;

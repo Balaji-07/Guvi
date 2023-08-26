@@ -21,7 +21,7 @@
     <body>
     <div class="navbar">
     <div class="display">
-            <img src="https://asset.brandfetch.io/id3BHBKuok/idIoOmPqzs.png" height=30px width=64px>
+            <img src="https://www.guvi.in/build/images/guvi-logo.e8ad68fbd8dc0a5fc2f7c4ffd580c54d.png" height=30px width=64px>
             <p class="">Screening Project</p>
         </div>
         <nav>
@@ -46,7 +46,7 @@
     </div>
 
         <div class="img">
-            <img src="https://asset.brandfetch.io/id3BHBKuok/id86bsKcFH.jpeg">
+            <img src="https://www.guvi.in/build/images/favicons/apple-touch-icon-1024x1024.png">
             <img class="two" src="https://media.giphy.com/media/n8DNCT49yl1keRq8p5/giphy.gif">
         </div>
         <div class="text">

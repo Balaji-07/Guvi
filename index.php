@@ -4,6 +4,21 @@
     header("Location: guvi.php");
     exit();
   }
+  $notify = $_GET['notify'] ?? '';
+   
+  if ($notify === 'inSuccess') {
+      echo '
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.all.min.js"></script>
+      <script src="regtoast.js"></script>
+      ';
+  }
+
+  if ($notify === 'outSuccess') {
+    echo '
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.all.min.js"></script>
+    <script src="outtoast.js"></script>
+    ';
+}
 ?>
 
 
@@ -13,12 +28,14 @@
         <title>Login/SignUp</title>
         <link rel="icon" type="image/x-icon" href="https://cdn1.iconfinder.com/data/icons/tiny-iconz-line-vol-09/20/fingerprint_biometric_login_scan-512.png">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.all.min.js"></script>
         <link rel="stylesheet" href="style.css?v=<?php echo time()?>">
     </head>
     <body>
         <div class="container">
         <div class="display">
-            <img src="https://asset.brandfetch.io/id3BHBKuok/idIoOmPqzs.png" height=30px width=64px>
+            <img src="https://www.guvi.in/build/images/guvi-logo.e8ad68fbd8dc0a5fc2f7c4ffd580c54d.png" height=30px width=64px>
             <p class="">Screening Project</p>   
         </div>
             <div class="slide-controls">
@@ -67,6 +84,6 @@
             </div>
         </div>
         
-        <script src="script.js?v=<?php echo time()?>"></script>
+        <script src="formnav.js?v=<?php echo time()?>"></script>
     </body>
 </html>
